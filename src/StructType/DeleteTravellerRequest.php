@@ -1,0 +1,52 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Pggns\MidocoApi\Crm\StructType;
+
+use InvalidArgumentException;
+use WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for DeleteTravellerRequest StructType
+ * @subpackage Structs
+ */
+class DeleteTravellerRequest extends AbstractStructBase
+{
+    /**
+     * The MidocoCrmTraveller
+     * Meta information extracted from the WSDL
+     * - ref: MidocoCrmTraveller
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller|null
+     */
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $MidocoCrmTraveller = null;
+    /**
+     * Constructor method for DeleteTravellerRequest
+     * @uses DeleteTravellerRequest::setMidocoCrmTraveller()
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $midocoCrmTraveller
+     */
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $midocoCrmTraveller = null)
+    {
+        $this
+            ->setMidocoCrmTraveller($midocoCrmTraveller);
+    }
+    /**
+     * Get MidocoCrmTraveller value
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller|null
+     */
+    public function getMidocoCrmTraveller(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller
+    {
+        return $this->MidocoCrmTraveller;
+    }
+    /**
+     * Set MidocoCrmTraveller value
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $midocoCrmTraveller
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteTravellerRequest
+     */
+    public function setMidocoCrmTraveller(?\Pggns\MidocoApi\Crm\StructType\MidocoCrmTraveller $midocoCrmTraveller = null): self
+    {
+        $this->MidocoCrmTraveller = $midocoCrmTraveller;
+        
+        return $this;
+    }
+}
