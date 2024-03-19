@@ -11,39 +11,40 @@ use WsdlToPhp\PackageBase\AbstractStructBase;
  * This class stands for DeleteCustomerMfRequest StructType
  * @subpackage Structs
  */
+#[\AllowDynamicProperties]
 class DeleteCustomerMfRequest extends AbstractStructBase
 {
     /**
      * The MidocoCustomerMf
      * Meta information extracted from the WSDL
      * - ref: MidocoCustomerMf
-     * @var \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO|null
+     * @var \Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf|null
      */
-    protected ?\Pggns\MidocoApi\Crm\StructType\CustomerMfDTO $MidocoCustomerMf = null;
+    protected ?\Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf $MidocoCustomerMf = null;
     /**
      * Constructor method for DeleteCustomerMfRequest
      * @uses DeleteCustomerMfRequest::setMidocoCustomerMf()
-     * @param \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO $midocoCustomerMf
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf $midocoCustomerMf
      */
-    public function __construct(?\Pggns\MidocoApi\Crm\StructType\CustomerMfDTO $midocoCustomerMf = null)
+    public function __construct(?\Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf $midocoCustomerMf = null)
     {
         $this
             ->setMidocoCustomerMf($midocoCustomerMf);
     }
     /**
      * Get MidocoCustomerMf value
-     * @return \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO|null
+     * @return \Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf|null
      */
-    public function getMidocoCustomerMf(): ?\Pggns\MidocoApi\Crm\StructType\CustomerMfDTO
+    public function getMidocoCustomerMf(): ?\Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf
     {
         return $this->MidocoCustomerMf;
     }
     /**
      * Set MidocoCustomerMf value
-     * @param \Pggns\MidocoApi\Crm\StructType\CustomerMfDTO $midocoCustomerMf
+     * @param \Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf $midocoCustomerMf
      * @return \Pggns\MidocoApi\Crm\StructType\DeleteCustomerMfRequest
      */
-    public function setMidocoCustomerMf(?\Pggns\MidocoApi\Crm\StructType\CustomerMfDTO $midocoCustomerMf = null): self
+    public function setMidocoCustomerMf(?\Pggns\MidocoApi\Crm\StructType\MidocoCustomerMf $midocoCustomerMf = null): self
     {
         $this->MidocoCustomerMf = $midocoCustomerMf;
         

@@ -19,7 +19,7 @@ class Search extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Crm\ServiceType\Search
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self

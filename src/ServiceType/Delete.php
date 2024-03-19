@@ -19,7 +19,7 @@ class Delete extends AbstractSoapClientBase
      * @param \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials
      * @param string $namespace
      * @param bool $mustUnderstand
-     * @param string $actor
+     * @param string|null $actor
      * @return \Pggns\MidocoApi\Crm\ServiceType\Delete
      */
     public function setSoapHeaderMidocoCredentials(\Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType $midocoCredentials, string $namespace = 'http://www.midoco.de/system', bool $mustUnderstand = false, ?string $actor = null): self
@@ -1026,9 +1026,36 @@ class Delete extends AbstractSoapClientBase
         }
     }
     /**
+     * Method to call the operation originally named deleteVirtualCcCardAccount
+     * Meta information extracted from the WSDL
+     * - SOAPHeaderNames: MidocoCredentials
+     * - SOAPHeaderNamespaces: http://www.midoco.de/system
+     * - SOAPHeaderTypes: \Pggns\MidocoApi\Crm\StructType\MidocoCredentialsType
+     * - SOAPHeaders: required
+     * @uses AbstractSoapClientBase::getSoapClient()
+     * @uses AbstractSoapClientBase::setResult()
+     * @uses AbstractSoapClientBase::saveLastError()
+     * @param \Pggns\MidocoApi\Crm\StructType\DeleteVirtualCcCardAccountRequest $paramDeleteVirtualCcCardAccountRequest
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteVirtualCcCardAccountResponse|bool
+     */
+    public function deleteVirtualCcCardAccount(\Pggns\MidocoApi\Crm\StructType\DeleteVirtualCcCardAccountRequest $paramDeleteVirtualCcCardAccountRequest)
+    {
+        try {
+            $this->setResult($resultDeleteVirtualCcCardAccount = $this->getSoapClient()->__soapCall('deleteVirtualCcCardAccount', [
+                $paramDeleteVirtualCcCardAccountRequest,
+            ], [], [], $this->outputHeaders));
+        
+            return $resultDeleteVirtualCcCardAccount;
+        } catch (SoapFault $soapFault) {
+            $this->saveLastError(__METHOD__, $soapFault);
+        
+            return false;
+        }
+    }
+    /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Pggns\MidocoApi\Crm\StructType\DeleteAddressResponse|\Pggns\MidocoApi\Crm\StructType\DeleteAgencyCommissionResponse|\Pggns\MidocoApi\Crm\StructType\DeleteAgencyCooperationHistoryResponse|\Pggns\MidocoApi\Crm\StructType\DeleteAutoBillingMatrixResponse|\Pggns\MidocoApi\Crm\StructType\DeleteBonusCardResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCcCardResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCollectiveInvoiceSettingResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCommunicationHistoriesResponse|\Pggns\MidocoApi\Crm\StructType\DeleteComplaintDocumentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteComplaintReasonResponse|\Pggns\MidocoApi\Crm\StructType\DeleteComplaintResponse|\Pggns\MidocoApi\Crm\StructType\DeleteContactEntryResponse|\Pggns\MidocoApi\Crm\StructType\DeleteContactSourceResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCreditorResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCrmExternalOfferResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCrmNoticeResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCrmPersonTravellerResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerCommissionDefinitionResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerMfResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerResponse|\Pggns\MidocoApi\Crm\StructType\DeleteDebitCardResponse|\Pggns\MidocoApi\Crm\StructType\DeleteDocumentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteFrequentFlyerNumberResponse|\Pggns\MidocoApi\Crm\StructType\DeleteGroupAdvisorResponse|\Pggns\MidocoApi\Crm\StructType\DeleteGroupConsentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMediatorChargeResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMediatorSettlementLevelsResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMediatorTextTemplateResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoAgencyNumberResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoChargeOrgUnitResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoChargeResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoCrmCustomerPaymentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoMandateResponse|\Pggns\MidocoApi\Crm\StructType\DeletePrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\DeleteSupplierReportFormatResponse|\Pggns\MidocoApi\Crm\StructType\DeleteTravellerResponse
+     * @return \Pggns\MidocoApi\Crm\StructType\DeleteAddressResponse|\Pggns\MidocoApi\Crm\StructType\DeleteAgencyCommissionResponse|\Pggns\MidocoApi\Crm\StructType\DeleteAgencyCooperationHistoryResponse|\Pggns\MidocoApi\Crm\StructType\DeleteAutoBillingMatrixResponse|\Pggns\MidocoApi\Crm\StructType\DeleteBonusCardResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCcCardResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCollectiveInvoiceSettingResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCommunicationHistoriesResponse|\Pggns\MidocoApi\Crm\StructType\DeleteComplaintDocumentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteComplaintReasonResponse|\Pggns\MidocoApi\Crm\StructType\DeleteComplaintResponse|\Pggns\MidocoApi\Crm\StructType\DeleteContactEntryResponse|\Pggns\MidocoApi\Crm\StructType\DeleteContactSourceResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCreditorResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCrmExternalOfferResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCrmNoticeResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCrmPersonTravellerResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerCommissionDefinitionResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerCriteriaResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerMfResponse|\Pggns\MidocoApi\Crm\StructType\DeleteCustomerResponse|\Pggns\MidocoApi\Crm\StructType\DeleteDebitCardResponse|\Pggns\MidocoApi\Crm\StructType\DeleteDocumentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteFrequentFlyerNumberResponse|\Pggns\MidocoApi\Crm\StructType\DeleteGroupAdvisorResponse|\Pggns\MidocoApi\Crm\StructType\DeleteGroupConsentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMediatorChargeResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMediatorSettlementLevelsResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMediatorTextTemplateResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoAgencyNumberResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoChargeOrgUnitResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoChargeResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoCrmCustomerPaymentResponse|\Pggns\MidocoApi\Crm\StructType\DeleteMidocoMandateResponse|\Pggns\MidocoApi\Crm\StructType\DeletePrintRecipientResponse|\Pggns\MidocoApi\Crm\StructType\DeleteSupplierReportFormatResponse|\Pggns\MidocoApi\Crm\StructType\DeleteTravellerResponse|\Pggns\MidocoApi\Crm\StructType\DeleteVirtualCcCardAccountResponse
      */
     public function getResult()
     {

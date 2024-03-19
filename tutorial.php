@@ -395,6 +395,22 @@ if ($save->savePaxconnectQueue(new \Pggns\MidocoApi\Crm\StructType\SavePaxconnec
     print_r($save->getLastError());
 }
 /**
+ * Sample call for saveVirtualCcCardAccount operation/method
+ */
+if ($save->saveVirtualCcCardAccount(new \Pggns\MidocoApi\Crm\StructType\SaveVirtualCcCardAccountRequest()) !== false) {
+    print_r($save->getResult());
+} else {
+    print_r($save->getLastError());
+}
+/**
+ * Sample call for saveVirtualCcCard operation/method
+ */
+if ($save->saveVirtualCcCard(new \Pggns\MidocoApi\Crm\StructType\SaveVirtualCcCardRequest()) !== false) {
+    print_r($save->getResult());
+} else {
+    print_r($save->getLastError());
+}
+/**
  * Samples for Get ServiceType
  */
 $get = new \Pggns\MidocoApi\Crm\ServiceType\Get($options);
@@ -1280,6 +1296,30 @@ if ($get->getCrmExternalOffer(new \Pggns\MidocoApi\Crm\StructType\GetCrmExternal
     print_r($get->getLastError());
 }
 /**
+ * Sample call for getExternAgencyInfos operation/method
+ */
+if ($get->getExternAgencyInfos(new \Pggns\MidocoApi\Crm\StructType\GetExternAgencyInfosRequest()) !== false) {
+    print_r($get->getResult());
+} else {
+    print_r($get->getLastError());
+}
+/**
+ * Sample call for getVirtualCcCardAccount operation/method
+ */
+if ($get->getVirtualCcCardAccount(new \Pggns\MidocoApi\Crm\StructType\GetVirtualCcCardAccountRequest()) !== false) {
+    print_r($get->getResult());
+} else {
+    print_r($get->getLastError());
+}
+/**
+ * Sample call for getVirtualCcCard operation/method
+ */
+if ($get->getVirtualCcCard(new \Pggns\MidocoApi\Crm\StructType\GetVirtualCcCardRequest()) !== false) {
+    print_r($get->getResult());
+} else {
+    print_r($get->getLastError());
+}
+/**
  * Samples for Search ServiceType
  */
 $search = new \Pggns\MidocoApi\Crm\ServiceType\Search($options);
@@ -1661,6 +1701,14 @@ if ($delete->deleteGroupConsent(new \Pggns\MidocoApi\Crm\StructType\DeleteGroupC
  * Sample call for deleteCrmExternalOffer operation/method
  */
 if ($delete->deleteCrmExternalOffer(new \Pggns\MidocoApi\Crm\StructType\DeleteCrmExternalOfferRequest()) !== false) {
+    print_r($delete->getResult());
+} else {
+    print_r($delete->getLastError());
+}
+/**
+ * Sample call for deleteVirtualCcCardAccount operation/method
+ */
+if ($delete->deleteVirtualCcCardAccount(new \Pggns\MidocoApi\Crm\StructType\DeleteVirtualCcCardAccountRequest()) !== false) {
     print_r($delete->getResult());
 } else {
     print_r($delete->getLastError());
