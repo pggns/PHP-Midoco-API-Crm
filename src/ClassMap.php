@@ -705,6 +705,7 @@ class ClassMap
             'NationalityDescDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\NationalityDescDTO',
             'SalutationNameDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\SalutationNameDTO',
             'SalutationTypeDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\SalutationTypeDTO',
+            'SanctionsScreeningImportDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\SanctionsScreeningImportDTO',
             'StatistikAtDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\StatistikAtDTO',
             'StatistikAtDataDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\StatistikAtDataDTO',
             'VisaProcessByCountryDTO' => '\\Pggns\\MidocoApi\\Crm\\StructType\\VisaProcessByCountryDTO',

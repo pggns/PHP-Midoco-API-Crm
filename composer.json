@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Pggns\\MidocoApi\\Crm\\": "src"
+            "Pggns\\MidocoApi\\Crm\\": "./src/"
         }
     },
     "type": "library",
